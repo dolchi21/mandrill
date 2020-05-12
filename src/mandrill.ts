@@ -1,13 +1,20 @@
-const axios = require('axios')
+import axios from 'axios'
+
+interface Attachment {
+    name: string
+    type: string
+    content: string
+}
+interface Content {
+    html: string,
+    attachments: Attachment[]
+}
 
 export async function content(key: string, id: string) {
     const ep = 'https://mandrillapp.com/api/1.0/messages/content.json'
     const params = { key, id }
     const { data } = await axios.get(ep, { params })
-    const { html } = data
-    return {
-        html
-    }
+    return data as Content
 }
 export async function info(key: string, id: string) {
     const ep = 'https://mandrillapp.com/api/1.0/messages/info.json'
