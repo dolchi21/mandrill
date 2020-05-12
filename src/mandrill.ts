@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-async function content(key, id) {
+export async function content(key: string, id: string) {
     const ep = 'https://mandrillapp.com/api/1.0/messages/content.json'
     const params = { key, id }
     const { data } = await axios.get(ep, { params })
@@ -9,7 +9,7 @@ async function content(key, id) {
         html
     }
 }
-async function info(key, id) {
+export async function info(key: string, id: string) {
     const ep = 'https://mandrillapp.com/api/1.0/messages/info.json'
     const params = { key, id }
     const { data } = await axios.get(ep, { params })
@@ -19,7 +19,7 @@ async function info(key, id) {
     }
 }
 
-module.exports = key => ({
-    content: id => content(key, id),
-    info: id => info(key, id),
+export const Mandrill = (key: string) => ({
+    content: (id: string) => content(key, id),
+    info: (id: string) => info(key, id),
 })

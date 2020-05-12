@@ -1,12 +1,13 @@
-const express = require('express')
-const Mandrill = require('./mandrill')
+import * as express from 'express'
+import { Mandrill } from './mandrill'
+
 const mandrill = Mandrill(process.env.API_KEY)
 
 const app = express()
 
-app.get('/message/:id/info', (req, res, next) => {
+app.get('/message/:id/info', async (req, res, next) => {
     try {
-        const {id} = req.params
+        const { id } = req.params
         const data = await mandrill.info(id)
         res.json(data)
     } catch (err) {
@@ -14,9 +15,9 @@ app.get('/message/:id/info', (req, res, next) => {
     }
 })
 
-app.get('/message/:id/content', (req, res, next) => {
+app.get('/message/:id/body', async (req, res, next) => {
     try {
-        const {id} = req.params
+        const { id } = req.params
         const data = await mandrill.content(id)
         res.send(data.html)
     } catch (err) {
