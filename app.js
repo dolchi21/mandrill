@@ -1,6 +1,6 @@
 const express = require('express')
 const Mandrill = require('./mandrill')
-const mandrill = Mandrill('asd')
+const mandrill = Mandrill(process.env.API_KEY)
 
 const app = express()
 
