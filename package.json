@@ -1,0 +1,23 @@
+{
+  "name": "mandrill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolchi21/mandrill.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dolchi21/mandrill/issues"
+  },
+  "homepage": "https://github.com/dolchi21/mandrill#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
