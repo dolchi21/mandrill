@@ -1,13 +1,17 @@
 import axios from 'axios'
 
 interface Attachment {
+    content: string
     name: string
     type: string
-    content: string
 }
 interface Content {
-    html: string,
+    _id: string
     attachments: Attachment[]
+    html: string
+    subject: string
+    tags: string[]
+    ts: number
 }
 
 export async function content(key: string, id: string) {
