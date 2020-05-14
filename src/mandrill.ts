@@ -20,29 +20,20 @@ interface Info {
     state: string
 }
 
-function ep(path: string) {
-    return path
-    const url = 'https://mandrillapp.com/api/1.0'
-    return url + path
-}
-
 export async function content(key: string, id: string) {
-    const url = ep('/messages/content')
     const params = { key, id }
-    const { data } = await axios.get<Content>(url, { params })
+    const { data } = await axios.get<Content>('/messages/content', { params })
     return data
 }
 export async function info(key: string, id: string) {
-    const url = ep('/messages/info')
     const params = { key, id }
-    const { data } = await axios.get<Info>(url, { params })
+    const { data } = await axios.get<Info>('/messages/info', { params })
     return data
 }
 export async function ping(key: string) {
     interface Ping { PING: string }
-    const url = ep('/users/ping2')
     const params = { key }
-    const { data } = await axios.get<Ping>(url, { params })
+    const { data } = await axios.get<Ping>('/users/ping2', { params })
     const { PING } = data
     return PING
 }
