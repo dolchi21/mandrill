@@ -1,4 +1,5 @@
 import axios from 'axios'
+axios.defaults.baseURL = 'https://mandrillapp.com/api/1.0'
 
 interface Attachment {
     content: string
@@ -24,16 +25,15 @@ function ep(path: string) {
     const url = 'https://mandrillapp.com/api/1.0'
     return url + path
 }
-axios.defaults.baseURL = 'https://mandrillapp.com/api/1.0'
 
 export async function content(key: string, id: string) {
-    const url = ep('/messages/content.json')
+    const url = ep('/messages/content')
     const params = { key, id }
     const { data } = await axios.get<Content>(url, { params })
     return data
 }
 export async function info(key: string, id: string) {
-    const url = ep('/messages/info.json')
+    const url = ep('/messages/info')
     const params = { key, id }
     const { data } = await axios.get<Info>(url, { params })
     return data
