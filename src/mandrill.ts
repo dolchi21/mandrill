@@ -13,24 +13,42 @@ interface Content {
     tags: string[]
     ts: number
 }
+interface Info {
+    clicks: number
+    opens: number
+    state: string
+}
+
+function ep(path: string) {
+    return path
+    const url = 'https://mandrillapp.com/api/1.0'
+    return url + path
+}
+axios.defaults.baseURL = 'https://mandrillapp.com/api/1.0'
 
 export async function content(key: string, id: string) {
-    const ep = 'https://mandrillapp.com/api/1.0/messages/content.json'
+    const url = ep('/messages/content.json')
     const params = { key, id }
-    const { data } = await axios.get(ep, { params })
-    return data as Content
+    const { data } = await axios.get<Content>(url, { params })
+    return data
 }
 export async function info(key: string, id: string) {
-    const ep = 'https://mandrillapp.com/api/1.0/messages/info.json'
+    const url = ep('/messages/info.json')
     const params = { key, id }
-    const { data } = await axios.get(ep, { params })
-    const { state } = data
-    return {
-        state
-    }
+    const { data } = await axios.get<Info>(url, { params })
+    return data
+}
+export async function ping(key: string) {
+    interface Ping { PING: string }
+    const url = ep('/users/ping2')
+    const params = { key }
+    const { data } = await axios.get<Ping>(url, { params })
+    const { PING } = data
+    return PING
 }
 
 export const Mandrill = (key: string) => ({
     content: (id: string) => content(key, id),
     info: (id: string) => info(key, id),
+    ping: () => ping(key),
 })
