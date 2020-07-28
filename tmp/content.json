@@ -1,0 +1,24 @@
+{
+  "headers": {
+    "X-Uid": "33467373",
+    "X-Mc-Metadata": "{\"uid\": \"33467373\"}",
+    "Mime-Version": "1.0",
+    "From": "\"COBRANZAS.COM\" <Pagos@cobranzas.com>",
+    "To": "mariana_narvaja@cargill.com",
+    "Date": "1 Jul 2020 20:51:49 -0300",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Transfer-Encoding": "base64"
+  },
+  "html": "<!DOCTYPE html>\n<html><head><meta charset=\"utf-8\"><link href=\"http://www.cobranzas.com/cobranzasNew/styles/styles.css\" rel=\"stylesheet\" type=\"text/css\"></head><body class=\"back_page\" leftmargin=\"0\" topmargin=\"5\" marginwidth=\"0\" marginheight=\"5\"><center><table cellpadding=\"2\" cellspacing=\"0\" border=\"0\" width=\"600\"><tr><td valign=\"bottom\" height=\"45\"><img src=\"http://www.cobranzas.com/cobranzasNew/images/logo.gif\" width=\"274\" height=\"33\"></td></tr></table><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"600\"><tr><td bgcolor=\"#ffffff\" valign=\"top\" colspan=\"2\"><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\"><tr><td background=\"http://www.cobranzas.com/cobranzasNew/images/back_ani.gif\" width=\"18\"><img src=\"http://www.cobranzas.com/cobranzasNew/images/corner2.jpg\"></td><td background=\"http://www.cobranzas.com/cobranzasNew/images/back_ani.gif\" class=\"titulo\" valign=\"bottom\">Nueva Comunicación de 20078238187 GIL ROBERTO OSCAR para Boortmalt Argentina S.A.S</td><td background=\"http://www.cobranzasdata6.com/images/back_ani.gif\" align=\"right\"><img src=\"http://www.cobranzasdata6.com/images/logos/CHS.gif\" width=\"75\" height=\"35\"></td></tr><tr><td colspan=\"3\"><center><br><br><table width=\"70%\" cellpadding=\"0\" cellspacing=\"1\" bordercolordark=\"#FFFFFF\" bordercolorlight=\"#CCCCCC\"><tr><td class=\"texto\">Ud. tiene a disposición una nueva comunicación del caso 001593.</td></tr><tr><td class=\"texto\">Puede acceder a la misma a través del módulo Comunicaciones.</td></tr></table><br><table width=\"70%\" border=\"0\" cellpadding=\"0\" cellspacing=\"1\"><tr></tr><tr><td class=\"texto\"><br><a href=\"http://www.cobranzas.com/admin\" class=\"Link5\" target=\"_blank\">www.cobranzas.com/admin</a></td></tr></table><br><br></center></td></tr></table></td></tr></table></center></body></html>",
+  "from_email": "Pagos@cobranzas.com",
+  "from_name": "COBRANZAS.COM",
+  "to": {
+    "email": "mariana_narvaja@cargill.com",
+    "name": ""
+  },
+  "subject": "(33467373) - Nueva Comunicación caso 001593 de 20078238187 GIL ROBERTO OSCAR",
+  "attachments": [],
+  "ts": 1593647806,
+  "tags": [],
+  "_id": "4da83856f07247f0b0e161433cc46e53"
+}

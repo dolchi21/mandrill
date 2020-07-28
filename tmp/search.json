@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "query": "u_uid:33747020"
+  },
+  "data": [
+    {
+      "ts": 1595977793,
+      "subject": "(33747020) - Cobranzas.com - REX - Procesamiento Exitoso",
+      "email": "SQL_SISDB@pintureriasrex.com",
+      "tags": [],
+      "opens": 0,
+      "clicks": 0,
+      "state": "sent",
+      "smtp_events": [],
+      "subaccount": null,
+      "resends": [],
+      "reject": null,
+      "_id": "90741ca4213e4f628e30f375b79beb4f",
+      "sender": "Pagos@cobranzas.com",
+      "template": null,
+      "metadata": {
+        "uid": "33747020"
+      },
+      "opens_detail": [],
+      "clicks_detail": []
+    }
+  ]
+}

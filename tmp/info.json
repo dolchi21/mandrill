@@ -1,0 +1,28 @@
+{
+  "ts": 1593647806,
+  "_id": "4da83856f07247f0b0e161433cc46e53",
+  "state": "sent",
+  "subject": "(33467373) - Nueva Comunicación caso 001593 de 20078238187 GIL ROBERTO OSCAR",
+  "email": "mariana_narvaja@cargill.com",
+  "tags": [],
+  "opens": 0,
+  "clicks": 0,
+  "smtp_events": [
+    {
+      "ts": 1593647808,
+      "type": "sent",
+      "diag": "250 2.0.0 31x2xw1awj-2 Message accepted for delivery",
+      "source_ip": "198.2.179.21",
+      "destination_ip": "148.163.147.24",
+      "size": 4312
+    }
+  ],
+  "resends": [],
+  "sender": "Pagos@cobranzas.com",
+  "template": null,
+  "metadata": {
+    "uid": "33467373"
+  },
+  "opens_detail": [],
+  "clicks_detail": []
+}
