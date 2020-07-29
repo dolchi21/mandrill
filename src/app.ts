@@ -1,7 +1,10 @@
 import * as express from 'express'
 import { Mandrill } from './mandrill'
 
-const mandrill = Mandrill('gPiMfpGJ1BQ5nTRWrDMeVg')
+import * as Config from './config'
+
+const config = Config.get()
+const mandrill = Mandrill(config.API_KEY)
 
 const app = express()
 
